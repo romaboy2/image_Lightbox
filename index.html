@@ -5,9 +5,6 @@
   <title>이미지 확대 보기</title>
   <style>
     body {
-      <a href="Rock_B_Main.png" data-lightbox="image-1">
-  <img src="Rock_B_Main.png" width="300">
-</a>
       font-family: sans-serif;
       text-align: center;
       background-color: #f8f8f8;
@@ -20,7 +17,6 @@
       border-radius: 8px;
       margin: 10px;
     }
-    /* 라이트박스 배경 */
     .lightbox {
       display: none;
       position: fixed;
@@ -41,9 +37,11 @@
 <body>
   <h2>사진을 클릭하면 확대됩니다</h2>
 
-  <!-- 이미지 -->
-  <img src="https://via.placeholder.com/300" alt="이미지1" onclick="openLightbox(this.src)">
-  <img src="https://via.placeholder.com/300x200" alt="이미지2" onclick="openLightbox(this.src)">
+  <!-- 🖼️ 여기에 너의 이미지 추가 -->
+  <img src="Rock_B_Main.png" alt="Rock B 작품" onclick="openLightbox(this.src)">
+
+  <!-- 필요하면 더 추가 -->
+  <!-- <img src="다른이미지.jpg" alt="다른 작품" onclick="openLightbox(this.src)"> -->
 
   <!-- 라이트박스 -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
@@ -62,3 +60,4 @@
   </script>
 </body>
 </html>
+
